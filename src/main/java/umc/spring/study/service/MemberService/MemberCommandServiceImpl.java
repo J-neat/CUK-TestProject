@@ -42,4 +42,9 @@ public class MemberCommandServiceImpl implements MemberCommandService{
 
         return memberRepository.save(newMember);
     }
+
+    @Transactional(readOnly = true)
+    public boolean existsById(Long id) {
+        return memberRepository.existsById(id);
+    }
 }

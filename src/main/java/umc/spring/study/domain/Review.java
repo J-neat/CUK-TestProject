@@ -22,5 +22,6 @@ public class Review extends BaseEntity {
 
     @ManyToOne
     @JoinColumn(name = "member_id")
+    @Setter
     private Member member;
 }
