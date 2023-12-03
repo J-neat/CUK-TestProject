@@ -6,7 +6,6 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import umc.spring.study.domain.enums.MissionStatus;
 
-import java.time.LocalDateTime;
 
 public class MissionResponseDTO {
 

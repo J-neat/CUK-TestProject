@@ -16,6 +16,9 @@ public class MissionRequestDTO {
         private Long storeId;
 
         @NotNull
+        private Long memberId;
+
+        @NotNull
         @Min(1)
         private Integer reward;
 
@@ -25,7 +28,6 @@ public class MissionRequestDTO {
         @NotBlank
         private String missionSpec;
 
-        @NotBlank
         private MissionStatus missionStatus;
     }
 }
